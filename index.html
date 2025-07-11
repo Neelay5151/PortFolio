@@ -1,16 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NEELAY RAO - Resume</title>
-  <link rel="stylesheet" href="nr.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .resume-container {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      width: 30%;
+    }
+
+    .sidebar .profile-pic {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section h3 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #ecf0f1;
+    }
+
+    .sidebar a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sidebar li {
+      padding: 4px 0;
+    }
+
+    .main-content {
+      padding: 30px;
+      width: 70%;
+    }
+
+    .main-content header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .main-content header h2 {
+      font-size: 18px;
+      font-weight: normal;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .main-content .section h3 {
+      color: #2c3e50;
+      font-size: 18px;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    .main-content .section p {
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .resume-container {
+        flex-direction: column;
+      }
+
+      .sidebar, .main-content {
+        width: 100%;
+      }
+
+      .sidebar {
+        text-align: center;
+      }
+
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="resume-container">
     <aside class="sidebar">
       <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-pic">
-      
+
       <section class="section">
         <h3>PERSONAL INFORMATION</h3>
         <p><strong>Email:</strong><br>neelay5151@gmail.com</p>
@@ -34,4 +137,38 @@
       </section>
 
       <section class="section">
-        <h3>OTHE
+        <h3>OTHER PERSONAL DETAILS</h3>
+        <p><strong>City:</strong> Gorakhpur</p>
+        <p><strong>Country:</strong> India</p>
+      </section>
+
+      <section class="section">
+        <h3>LANGUAGES</h3>
+        <ul>
+          <li>Hindi</li>
+          <li>English</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>NEELAY RAO</h1>
+        <h2>STUDENT</h2>
+      </header>
+
+      <section class="section">
+        <h3>PROFILE SUMMARY</h3>
+        <p>
+          B.Tech in INFORMATION TECHNOLOGY with experience in Python, Java, SQL, Operating System, and C++.
+        </p>
+      </section>
+
+      <section class="section">
+        <h3>EDUCATION</h3>
+        <p><strong>2022:</strong> B.Tech, Shree Ramswaroop Memorial College of Engineering and Management</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
